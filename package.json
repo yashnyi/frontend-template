@@ -1,0 +1,28 @@
+{
+  "name": "basic-template",
+  "version": "1.0.0",
+  "description": "Template for (no framework) frontend projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashnyi/basic-template.git"
+  },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "HTML",
+    "SCSS",
+    "JavaScript",
+    "parcel",
+    "eslint"
+  ],
+  "author": "yashnyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashnyi/basic-template/issues"
+  },
+  "homepage": "https://github.com/yashnyi/basic-template#readme"
+}
