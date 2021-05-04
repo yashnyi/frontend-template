@@ -2,9 +2,11 @@
   "name": "basic-template",
   "version": "1.0.0",
   "description": "Template for (no framework) frontend projects",
-  "main": "index.js",
+  "main": "./src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx parcel build --out-dir dist --public-url ./ ./src/index.html",
+    "start": "parcel serve ./src/index.html --open"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/yashnyi/basic-template/issues"
   },
-  "homepage": "https://github.com/yashnyi/basic-template#readme"
+  "homepage": "https://github.com/yashnyi/basic-template#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {}
 }
