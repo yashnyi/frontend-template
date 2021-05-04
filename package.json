@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx parcel build --out-dir dist --public-url ./ ./src/index.html",
-    "start": "parcel serve ./src/index.html --open"
+    "start": "parcel serve ./src/index.html --open",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,9 @@
   },
   "homepage": "https://github.com/yashnyi/basic-template#readme",
   "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {}
