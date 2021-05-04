@@ -5,7 +5,8 @@
   "main": "./src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx parcel build --out-dir dist --public-url ./ ./src/index.html",
+    "build": "npx parcel build --out-dir docs --public-url ./ ./src/index.html",
+    "prebuild": "rm -rf ./docs",
     "start": "parcel serve ./src/index.html --open",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
