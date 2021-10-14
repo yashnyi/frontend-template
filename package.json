@@ -8,8 +8,12 @@
     "build": "npx parcel build --out-dir docs --public-url ./ ./src/index.html",
     "prebuild": "rm -rf ./docs",
     "start": "parcel serve ./src/index.html --open",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint-js": "eslint ./src",
+    "lint-js:fix": "eslint ./src --fix",
+    "lint-styles": "stylelint **/*.css **/*.scss",
+    "lint-styles:fix": "stylelint --fix **/*.css **/*.scss",
+    "lint": "concurrently \"npm:lint-js\" \"npm:lint-styles\"",
+    "lint:fix": "concurrently \"npm:lint-js:fix\" \"npm:lint-styles:fix\""
   },
   "repository": {
     "type": "git",
@@ -31,10 +35,15 @@
   },
   "homepage": "https://github.com/yashnyi/basic-template#readme",
   "devDependencies": {
+    "concurrently": "^6.0.2",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "parcel-bundler": "^1.12.5"
+    "husky": "^6.0.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
   },
   "dependencies": {}
 }

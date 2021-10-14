@@ -105,3 +105,6 @@ dist
 
 # Webstorm settings
 .idea
+
+# Other
+.husky
