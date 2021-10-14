@@ -8,12 +8,12 @@ Template for simple and small (no framework) frontend projects.
 * Create and clone repository
 * Run `npm install`
 * Run `npm start`
-* <details>
+<details>
     <summary>if you would like to use gh-pages</summary>
-    
+
     - Make sure you enabled it in repository Pages setting, choosen branch and folder `/docs`
     - Replace `<your_account>` with your Github username and `<repo_name>` (https://<your_account>.github.io/<repo_name>/) to see your project on gh-pages
-  </details>
+</details>
 
 ## About
 * Eslint
